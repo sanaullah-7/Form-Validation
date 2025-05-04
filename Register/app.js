@@ -28,7 +28,7 @@ RegisterForm.addEventListener("submit",(e)=>{
        Users.push(user);
        localStorage.setItem("users",JSON.stringify(Users))
        alert("Registrtation Successfully!")
-       window.location.href="../Login/index.html"//This line tells the browser to go to the page named Login.html.
+       window.location.href="./Login/index.html"//This line tells the browser to go to the page named Login.html.
 
        
     }
