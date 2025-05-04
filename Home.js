@@ -35,7 +35,7 @@ todoForm.addEventListener("submit", (e) => {
     const todos = JSON.parse(localStorage.getItem("todos")) || [];
     const todo ={
       task: e.target.task.value,
-      createdBy: { ...CurrentUser },//... (Spread Operator)"Is object ya array ke andar jo bhi cheezen hain, unko copy kar k yahan laa ke daal do.
+      createdBy: { ...CurrentUser },//... (Spread Operator)"Is object ya array ke andar jo bhi cheezen hain, unko copy kar k yahan laa ke daal do.//This property contains a copy of the CurrentUser object. The spread operator ... is used to copy all the properties of the CurrentUser object and assign them to the "createdBy" property.
     };
      todos.push(todo)
   
