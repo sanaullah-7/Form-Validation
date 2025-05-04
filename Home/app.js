@@ -11,7 +11,7 @@ const CurrentUser = JSON.parse(localStorage.getItem("currentUser"));//gets the s
 UserName.innerText=CurrentUser.Name;
 
 Logout.addEventListener("click", () => {
-          window.location.href = "Login.html";
+          window.location.href = "../Login/index.html";
           localStorage.removeItem("currentUser");
 
         });
