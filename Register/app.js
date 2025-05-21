@@ -8,6 +8,7 @@ RegisterForm.addEventListener("submit",(e)=>{
    
 
     const Users = JSON.parse(localStorage.getItem("users"))||[];//Agar koi data na mila, to khaali array [] le lo.
+    //we get user data beacuse we want user data come to login form understand it
 
     const FoundUser = Users.find(function(item){
        return item.email === Email}    //Aur .find() us user ko return karta hai. matlab return karo agr ye statment true ha

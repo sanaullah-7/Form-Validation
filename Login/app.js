@@ -1,5 +1,4 @@
 const LoginForm = document.getElementById("Login-Form");
-
 LoginForm.addEventListener("submit",function(event){
     event.preventDefault();
     const Email = event.target.email.value;
@@ -7,7 +6,7 @@ LoginForm.addEventListener("submit",function(event){
     
 
 
-    const Users = JSON.parse(localStorage.getItem("users"))||[];
+    const Users = JSON.parse(localStorage.getItem("users"))||[];//we get beacuse we want user data in login form understand it
                                  //arrow function
     const FoundUser = Users.find((item)=> item.email === Email && item.password === Password)
     if (FoundUser)
